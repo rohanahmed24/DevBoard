@@ -202,7 +202,6 @@ if (boardText) {
 const backToDeskButton = document.getElementById("backToDesk");
 if (backToDeskButton) {
   backToDeskButton.addEventListener("click", () => {
-    window.location.href = "/";
+    window.location.href = "index.html";
   });
 }
-
