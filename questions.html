@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-200 h-full">
+    <header>
+      <nav class="pt-8">
+        <div
+          class="flex justify-between items-center container h-[100px] mx-auto gap-2 bg-white py-5 px-5 rounded-lg"
+        >
+          <div class="flex items-center gap-2">
+            <img src="./assets/logo.png" alt="" />
+            <h1 class="text-3xl font-extrabold">
+              <span class="font-normal">Dev</span>Board
+            </h1>
+          </div>
+          <div
+            class="bg-slate-200 w-[120px] h-[60px] flex justify-start items-center rounded-3xl ml-auto mr-0"
+          >
+            <img class="ml-2 w-[32px]" src="./assets/checkbox.png" alt="" />
+            <h2 id="addTaskCount" class="text-4xl font-bold ml-5">23</h2>
+          </div>
+          <img
+            id="disco"
+            class="ml-3 bg-slate-200 rounded-full px-5 py-5"
+            src="./assets/theme-btn.png"
+            alt=""
+          />
+          <button class="btn" onclick="window.location.href='/'">Back to Desk</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container mx-auto mt-10">
+        <h1 class="text-3xl font-extrabold text-center">Blog</h1>
+      </div>
+      <div class="container mx-auto mt-10 border rounded-lg bg-white">
+        <p class="p-10 text-xl">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </p>
+      </div>
+      <div class="container mx-auto mt-10 border rounded-lg bg-white">
+        <p class="p-10 text-xl">
+          Answer-1: You can select DOM elements using methods like
+          `document.getElementById` for a single element,
+          `document.getElementsByClassName` and `document.getElementsByTagName`
+          for collections, and `document.querySelector/querySelectorAll` for
+          dynamic queries by CSS selectors. More sophisticated methods like
+          `document.evaluate` for XPath expressions and DOM traversal methods
+          like `closest` and `childNodes` provide more control over element
+          selection.
+        </p>
+      </div>
+      <div class="container mx-auto mt-10 border rounded-lg bg-white">
+        <p class="p-10 text-xl">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </p>
+      </div>
+      <div class="container mx-auto mt-10 border rounded-lg bg-white">
+        <p class="p-10 text-xl">
+          Answer-2: `innerHTML` returns the HTML content of an element as a
+          string, allowing you to insert HTML elements and modify the structure.
+          `innerText` returns the visible text content of an element, including
+          whitespace and line breaks, but excludes hidden elements.
+          `textContent` returns the complete text content of an element,
+          including hidden elements and whitespace, making it more reliable for
+          cross-browser compatibility.
+        </p>
+      </div>
+      <div class="container mx-auto mt-10 border rounded-lg bg-white">
+        <p class="p-10 text-xl">
+          Question-3: What is event delegation in the DOM?
+        </p>
+      </div>
+      <div class="container mx-auto mt-10 border rounded-lg bg-white">
+        <p class="p-10 text-xl">
+          Answer-3: Event delegation is a technique where you attach an event
+          listener to a parent element instead of each child element. This
+          approach is efficient for handling events on dynamically added
+          elements and reduces the need for attaching listeners to each element.
+        </p>
+      </div>
+      <div class="container mx-auto mt-10 border rounded-lg bg-white">
+        <p class="p-10 text-xl">
+          Question-4: What is event bubbling in the DOM?
+        </p>
+      </div>
+      <div class="container mx-auto mt-10 border rounded-lg bg-white">
+        <p class="p-10 text-xl">
+          Answer-4: Event bubbling is a process where an event is triggered on a
+          child element and then propagated up to its parent elements, allowing
+          you to handle events at the parent level. This is a common pattern in
+          event handling and can be used to implement event delegation and
+          handle events on dynamically added elements.
+        </p>
+      </div>
+      <div class="container mx-auto mt-10 border rounded-lg bg-white">
+        <p class="p-10 text-xl">
+          Question-4: What is event bubbling in the DOM?
+        </p>
+      </div>
+      <div class="container mx-auto mt-10 border rounded-lg bg-white">
+        <p class="p-10 text-xl">
+          Answer-4: Event bubbling is a process where an event is triggered on a
+          child element and then propagated up to its parent elements, allowing
+          you to handle events at the parent level. This is a common pattern in
+          event handling and can be used to implement event delegation and
+          handle events on dynamically added elements.
+        </p>
+      </div>
+      <div class="container mx-auto mt-10 border rounded-lg bg-white">
+        <p class="p-10 text-xl">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </p>
+      </div>
+      <div class="container mx-auto mt-10 border rounded-lg bg-white">
+        <p class="p-10 text-xl">
+          Answer-5: You can create elements using `document.createElement`, add
+          elements using `appendChild` or `insertAdjacentElement`, and remove
+          elements using `removeChild` or `remove`.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
